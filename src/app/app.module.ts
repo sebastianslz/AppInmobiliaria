@@ -9,6 +9,7 @@ import { EmpleadoModule } from './dashboard/dashboard/empleado/empleado/empleado
 import { FormsModule} from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -22,7 +23,13 @@ import { FormsModule} from '@angular/forms';
     EmpleadoModule,
     FormsModule
   ],
-  providers: [],
+  exports: [
+    FormsModule
+  ],
+  providers: [
+      
+  ],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

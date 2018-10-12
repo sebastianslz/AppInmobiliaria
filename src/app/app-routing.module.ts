@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {EmpleadoComponent} from './dashboard/dashboard/empleado/empleado.component';
 
-const routes: Routes = [
-     {path: '', redirectTo: 'login', pathMatch: 'full'}
+// Route Configuration
+export const routes: Routes = [
+  { path: 'Empleado', component: EmpleadoComponent }
 ];
 
 @NgModule({
@@ -10,3 +12,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
